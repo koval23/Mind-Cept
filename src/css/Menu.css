@@ -1,0 +1,33 @@
+/* :root {
+  --base-color: rgb(250, 167, 0);
+  --base-font-size: 16px;
+}
+
+@media (max-width: 767.98px) {
+  .logo-name {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 2vw;
+    font-size: min(max(16px, 1.5vw), 28px);
+    padding: 1px;
+    margin-left: 5px;
+    border: solid 1px var(--base-color);
+    border-radius: 5px;
+    color: var(--base-color);
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    text-align: center; 
+  }
+
+  .nav-link {
+    display: inline-block;
+     width: 100%; 
+  }
+} */

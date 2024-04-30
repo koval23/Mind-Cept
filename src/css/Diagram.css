@@ -1,0 +1,80 @@
+:root {
+  --base-color: rgb(250, 167, 0);
+  --base-font-size: 16px;
+}
+.diagram-position {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  height: 100vh;
+  
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+
+}
+.diagram-style {
+  background-color: var(--base-color);
+  color: aliceblue;
+  font-weight: 600;
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  /* z-index: 10, */
+
+  
+}
+.diagram-style:hover {
+  transform: scale(1.1); /* Увеличивает размер элемента на 10% */
+  transition: transform 0.2s ease-in-out; /* Добавляет плавность анимации */
+}
+
+.my-custom-tooltip {
+  z-index: 10;
+  /* background-color: rgba(214, 208, 208, 0.886); */
+  min-width: 180px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.container-diagram {
+  z-index: 1;
+  background-image: url("../img/pngtree-abstract-pink-gradient-minimalistic-background-image_351703.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Если вы хотите выровнять содержимое по вертикали */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Указывайте минимальную высоту, если вы хотите, чтобы контейнер занимал всю доступную высоту */
+}
+.row-right-contaier {
+  position: absolute;
+  /* padding: 20px; */
+  top: 110px; /* Измените это значение, чтобы сдвинуть изображение вниз от верха контейнера */
+  right: 210px;
+  width:"auto";
+  height:"auto";
+
+}
+.row-right {
+  width: 150px; /* фиксированная ширина изображения */
+  height: 180px; /* для сохранения пропорций изображения */
+  display: block;
+  margin: auto; /* автоматическое выравнивание по центру */
+  transform: scaleX(-1);
+}
+.row-right-contaier-2 {
+  position: absolute;
+  bottom: 310px; /* Измените это значение, чтобы сдвинуть изображение вниз от верха контейнера */
+  left: 230px;
+  transform: scaleX(-1);
+}
+.row-left-contaier-2 {
+  position: absolute;
+  bottom: 100px; /* Измените это значение, чтобы сдвинуть изображение вниз от верха контейнера */
+  right: 210px;
+  width:"auto";
+  height:"auto";
+}
+

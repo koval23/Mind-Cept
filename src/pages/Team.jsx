@@ -55,6 +55,20 @@ export default class Home extends Component {
                 <Button variant="primary">About team</Button>
               </Card.Body>
             </Card>
+            <Card className="m-4" bg="warning">
+              <Card.Body>
+                <Card.Title>Developers</Card.Title>
+                <Card.Text>
+                  Lorem kljlkj lkjlk w,mn qwewqe .,m, qwe/,/ qe,mcvd
+                </Card.Text>
+                <Button variant="primary">About team</Button>
+              </Card.Body>
+              <Card.Img
+                variant="bottom"
+                src="https://media.istockphoto.com/id/1346944001/de/foto/nahaufnahme-von-kollegen-die-ihre-h%C3%A4nde-stapeln.jpg?s=612x612&w=0&k=20&c=nz6p6DhsiCWg5H8R7UlnGmAVxpFjNMCwfuqIRI6k0-o="
+                alt="img"
+              />
+            </Card>
           </CardGroup>
         </Container>
       </>

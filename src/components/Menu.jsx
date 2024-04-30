@@ -52,13 +52,13 @@ export default class App extends Component {
                   About us
                 </a>
 
-                <a
+                {/* <a
                   className="nav-link"
                   href="#blog-form-section"
                   onClick={this.handleNavClick}
                 >
                   Blog
-                </a>
+                </a> */}
                 <a
                   className="nav-link"
                   href="#contact-team-section"

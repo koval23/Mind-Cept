@@ -16,7 +16,6 @@ const HoverComponent = ({
     position: "absolute",
     border: "1px solid black",
     padding: "10px",
-    backgroundColor: "white",
     backgroundColor: "rgba(214, 208, 208, 0.886)",
     boxShadow: "5px 10px 20px 5px rgba(250, 167, 0, 0.5)",
 
@@ -32,7 +31,7 @@ const HoverComponent = ({
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         style={{
-          zIndex:"5",
+          zIndex: "5",
           width: "120px",
           height: "120px",
           borderRadius: "60px",

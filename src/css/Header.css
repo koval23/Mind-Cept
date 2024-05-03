@@ -6,17 +6,29 @@
 /* ------------------------ */
 .card {
   margin: 16px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  border: solid 2px white;
   border-radius: 4px;
   padding: 20px;
   box-sizing: border-box;
   color: aliceblue;
+  max-width: 100%;
 }
+.card:hover {
+  transform: scale(1.1); /* Увеличивает размер элемента на 10% */
+  transition: transform 0.2s ease-in-out; /* Добавляет плавность анимации */
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.button-animation:hover {
+  background-color: transparent;
+  transform: scale(1.1); /* Увеличивает размер элемента на 10% */
+  transition: transform 0.2s ease-in-out; /* Добавляет плавность анимации */
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
 .card-title {
   text-align: center;
   margin-bottom: 20px;
@@ -32,14 +44,13 @@
 }
 .button {
   text-decoration: none;
-  background-color: #007bff;
+  /* background-color: #007bff; */
   color: white;
   padding: 10px 20px;
   border-radius: 4px;
-  border: none;
   cursor: pointer;
 }
 .button:hover {
   background-color: #0056b3;
 }
-
+/* -------- media --------------- */

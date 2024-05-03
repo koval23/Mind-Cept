@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import "../css/Menu.css";
 import nameLogo from "../img/bdb8e43203e8637f65bf57d9e1eb8579_1499x624_0x0_1499x750_crop.png";
 import orangeColorLogo from "../img/output-onlinepngtools.png";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-// import Contacts from "../pages/Contacts";
+import "../css/MyContainer.css";
 
 export default class App extends Component {
   handleNavClick = (event) => {
@@ -16,7 +13,7 @@ export default class App extends Component {
   };
   render() {
     return (
-      <>
+      <div style={{ margin: "125px" }}>
         <Navbar
           collapseOnSelect
           expand="md"
@@ -24,7 +21,7 @@ export default class App extends Component {
           variant="dark"
           fixed="top"
         >
-          <Container>
+          <Container className="header-container">
             <Navbar.Brand href="/">
               <img
                 src={orangeColorLogo}
@@ -51,14 +48,6 @@ export default class App extends Component {
                 >
                   About us
                 </a>
-
-                {/* <a
-                  className="nav-link"
-                  href="#blog-form-section"
-                  onClick={this.handleNavClick}
-                >
-                  Blog
-                </a> */}
                 <a
                   className="nav-link"
                   href="#contact-team-section"
@@ -75,9 +64,18 @@ export default class App extends Component {
                 </a>
               </Nav>
             </Navbar.Collapse>
+            <Navbar.Brand href="/" className="logo-name">
+              <img
+                src={nameLogo}
+                height="100px"
+                width="230px"
+                className="d-inline-block align-top"
+                alt="logo"
+              />
+            </Navbar.Brand>
           </Container>
         </Navbar>
-      </>
+      </div>
     );
   }
 }

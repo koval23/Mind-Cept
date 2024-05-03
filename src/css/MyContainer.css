@@ -1,0 +1,22 @@
+.header-container {
+  max-width: 1200px; /* Полная высота окна просмотра */
+  display: flex; /* Использование Flexbox для центрирования */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center;
+  flex-direction: "column";
+}
+.header-content-container {
+  background-color: antiquewhite;
+  max-width: 1200px; /* Максимальная ширина, чтобы контент не был слишком широким */
+  padding: 20px; /* Внутренние отступы для контента */
+  border: solid 2px black;
+  height: 100%;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Небольшая тень для лучшей видимости */
+}
+.header-position {
+  display: "flex";
+  justify-content: "center";
+  align-items: center;
+  min-height: "80vh";
+  flex-direction: "column";
+}

@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --base-color: rgb(250, 167, 0);
   --base-font-size: 16px;
 }
@@ -21,13 +21,12 @@
   }
 }
 @media (max-width: 768px) {
-
   .navbar-nav {
-    text-align: center; 
+    text-align: center;
   }
 
   .nav-link {
     display: inline-block;
-     width: 100%; 
+    width: 100%;
   }
-} */
+}
